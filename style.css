@@ -107,19 +107,19 @@ nav ul li {
   text-decoration: underline;
 }
 
-#doc {
+/* #doc {
   margin: 127px 0;
-}
+} */
 
-#content {
+/* #content {
   margin: 0 auto;
   max-width: 1140px;
+} */
+
+.sliderz {
+  margin-top: 122px;
 }
-
-/*.slider {
-  max-width: 960px;
-  margin-top: 110px;
-
+/*
 .social {
   height: 100px;
   width: 100px;
