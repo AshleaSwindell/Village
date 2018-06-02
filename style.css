@@ -1,0 +1,268 @@
+/* HTML doc style */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  background: #f0f0f0;
+  font: 14px/20px Arial, san-serif;
+  color: #555;
+  margin: 0;
+}
+/* font-size is 180% of the normal h1 font size*/
+h1 {
+  text-align: center;
+  font-size: 180%;
+  line-height: 120%;
+  padding: 5% 0 ;
+}
+/* padding-left pushes it off the left hand side for when class schedule comes in*/
+h2 {
+  text-decoration: underline;
+  line-height: 280%;
+  padding-left: 2%;
+
+}
+/* h3's are for the text in my events*/
+h3 {
+  line-height: 70px;
+  padding: 5% 0;
+
+}
+
+p {
+  padding: 1%;
+  }
+
+img {
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+/*a(links) are automtically underlined, so text-decorations: none; takes that away */
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+/* Now only when you hover it will become underlined*/
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+/* Top header with blue background(still messing with height to see if my navigation will look better)
+z-index 100% is so that it stays above everything else on the screen*/
+header {
+  background: #405580;
+  width: 100%;
+  height: 130px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100%;
+  opacity: .90;
+}
+
+#logo {
+  margin: 10px;
+  float: left;
+  width: 600px;
+  height: 95px;
+  background: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/bf7e3c31436709.56059befdb0de.png) no-repeat center;
+}
+
+nav {
+  float: right;
+  padding: 10px 20px 20px 0px;
+  margin: 0px;
+  font-size: 15px;
+}
+
+#menu-icon {
+  width: 40px;
+  height: 40px;
+  background: url(https://use.fontawesome.com/releases/v5.0.13/svgs/solid/bars.svg) center;
+}
+
+a:hover#menu-icon {
+  border-radius: 4px 4px 0 0;
+}
+/* list style none took away bullet points*/
+ul {
+  list-style: none;
+}
+/* inline block made my navigation line up next to each other instead of listed on top of eachother*/
+nav ul li {
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
+/*only the active/current website will be underlined at all times*/
+.current {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+#doc {
+  margin: 110px 0;
+}
+
+#content {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+/*.slider {
+  max-width: 960px;
+  margin-top: 110px;
+
+.social {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+}*/
+
+section {
+  width: 29%;
+  float: left;
+  margin: 2% 2%;
+  text-align: center;
+}
+/*take care of floating issues */
+.clear {
+  clear: both;
+}
+/* article(comecheckusoutpic)will be width:50% of screen so events can be split screen*/
+article {
+  float: left;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  padding: 4%;
+}
+/*events rules*/
+aside {
+  float: right;
+  margin: 0 auto;
+  width: 36%;
+  height: auto;
+  padding: 3%;
+
+}
+/*fixes misalignment when page shrinks*/
+ul.events li {
+  padding-left: 3%;
+
+}
+
+footer {
+  background: #333333;
+  width: 100%;
+  overflow: hidden;
+  opacity: .90;
+}
+footer p, footer h3 {
+  color: #FFF;
+}
+/*takes away phone# link on phones*/
+footer p a {
+  color: #FFF;
+  text-decoration: none;
+}
+ul.social li {
+  display: inline;
+}
+ul.social li img {
+  height: 60px;
+
+}
+
+footer.second {
+  border-top: 1px solid #4D4E50;
+  background-color: #333333;
+  max-height: 50px;
+  text-align: center;
+  opacity: 0.95;
+}
+
+/*-------Media------*/
+@media screen and (max-width: 700px){
+  body {
+    position: absolute;
+  }
+}
+@media screen and (max-width: 700px){
+  header {
+    position: absolute;
+  }
+
+  #menu-icon {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background: url(https://use.fontawesome.com/releases/v5.0.13/svgs/solid/bars.svg) no-repeat 98% center;
+    cursor: pointer;
+}
+nav ul {
+  overflow: hidden;
+  background: #505050;
+  height: 0;
+}
+nav ul.open {
+  height: auto;
+}
+/*changed the listed item ontop of eachother*/
+nav ul li {
+  float: none;
+  text-align: left;
+  width: 80%;
+  margin: 0;
+}
+
+nav ul li a{
+  color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #404040;
+  display: block;
+  margin: 0;
+}
+nav ul li:hover {
+  background-color: grey;
+}
+  nav il. nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #405580;
+    border: 1px solid #FFF;
+    right: 20px;
+    top: 60px;
+    width: 50%;
+    border-radius: 2px 0 2px 2px;
+  }
+
+
+/* width on this will change all sections to 100% width when shrunk down to mobile size, erasing overlapping*/
+section {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+article {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+aside {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
