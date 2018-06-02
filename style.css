@@ -70,7 +70,7 @@ header {
 #logo {
   margin: 10px;
   float: left;
-  width: 600px;
+  width: 100%;
   height: 95px;
   background: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/bf7e3c31436709.56059befdb0de.png) no-repeat center;
 }
