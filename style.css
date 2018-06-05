@@ -42,6 +42,12 @@ img {
   height: auto;
   width: auto;
 }
+.map {
+
+}
+.floorplans {
+  margin-top: 150px;
+}
 /*a(links) are automtically underlined, so text-decorations: none; takes that away */
 a {
   color: black;
@@ -153,6 +159,10 @@ section {
 /*take care of floating issues */
 .clear {
   clear: both;
+}
+
+.address {
+  margin-top: 150px;
 }
 /* article(comecheckusoutpic)will be width:50% of screen so events can be split screen*/
 article {
