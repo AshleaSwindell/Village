@@ -43,10 +43,17 @@ img {
   width: auto;
 }
 .map {
+  width: 50%;
 
 }
 .floorplans {
   margin-top: 150px;
+}
+.amenetiesSlide {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 /*a(links) are automtically underlined, so text-decorations: none; takes that away */
 a {
@@ -95,7 +102,7 @@ nav {
    margin-left: 50px;
  }
  .Ameneties {
-   margin-top: 150px;
+
  }
 #menu-icon {
   width: 40px;
@@ -136,8 +143,28 @@ nav ul li {
 .sliderz {
   margin-top: 140px;
   height: 500px;
-  width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 
+
+}
+#wrap {
+  width: 485px;
+  margin: 80px;
+}
+.propaddleft {
+  margin-top: 170px;
+  width: 240px;
+  float: left;
+
+
+}
+.hoursright {
+  width: 240px;
+  float: right;
+  margin-top: 170px;
 
 }
 
