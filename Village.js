@@ -4,7 +4,6 @@ $( document ).ready( function(){
     } );
 } );
 
-
 var i = 0; // start point
 var images = [];
 var time = 4000;
