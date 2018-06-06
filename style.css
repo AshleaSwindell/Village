@@ -43,8 +43,8 @@ img {
   width: auto;
 }
 .map {
-  width: 50%;
-
+  width: 70%;
+  height: 50%;
 }
 .floorplans {
   margin-top: 150px;
@@ -101,7 +101,8 @@ nav {
    margin-top: 150px;
    margin-left: 50px;
  }
- .Ameneties {
+ .amenetiesSlide {
+   margin-top: 170px;
 
  }
 #menu-icon {
@@ -151,19 +152,16 @@ nav ul li {
 
 }
 #wrap {
-  width: 485px;
-  margin: 80px;
+  width: 70%;
+  margin: 41px;
 }
 .propaddleft {
-  width: 240px;
+  width: 40%;
   float: left;
-
-
 }
 .hoursright {
-  width: 240px;
+  width: 30%;
   float: right;
-
 
 }
 
@@ -234,12 +232,7 @@ footer.second {
   opacity: 0.95;
 }
 
-
-
-
-
-
-
+/*------------Contact form-------------------*/
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -273,11 +266,8 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
     margin-top: 170px;
+    width: 40%;
 }
-
-
-
-
 
 
 
