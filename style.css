@@ -98,7 +98,7 @@ nav {
   font-size: 15px;
 }
  .pricinglist {
-   margin-top: 150px;
+  
    margin-left: 50px;
  }
  .amenetiesSlide {
@@ -152,7 +152,7 @@ nav ul li {
 
 }
 #wrap {
-  width: 70%;
+  width: 37%;
   margin: 41px;
 }
 .propaddleft {
@@ -163,6 +163,12 @@ nav ul li {
   width: 30%;
   float: right;
 
+}
+.faq {
+  margin-top: 170px;
+}
+.faq p:nth-child(2n + 1) {
+  background-color: grey;
 }
 
 section {
