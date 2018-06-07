@@ -9,14 +9,14 @@ var images = [];
 var time = 4000;
 
 // image list
-images[0] = "image1.jpg";
-images[1] = "image2.jpg";
-images[2] = "image3.jpg";
-images[3] = "image4.jpg";
+images[0] = "url('image1.jpg')";
+images[1] = "url('image2.jpg')";
+images[2] = "url('image3.jpg')";
+images[3] = "url('image4.jpg')";
 
 // change image
 function changeImg(){
-    document.slide.src = images[i];
+    document.querySelector( ".sliderz" ).style.backgroundImage = images[i];
 
     if( i < images.length - 1 ){
         i++;
@@ -28,3 +28,11 @@ function changeImg(){
 }
 
 window.onload = changeImg;
+
+
+$( ".autoplay" ).slick( {
+    "slidesToShow": 3,
+    "slidesToScroll": 1,
+    "autoplay": true,
+    "autoplaySpeed": 2000,
+} );
